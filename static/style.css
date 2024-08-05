@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebebeb;
+}
+.title{
+    margin: 20px 0;
+}
+
+.main{
+    border: 5px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.name{
+    display: flex;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 8px 16px;
+    color: #7e7e7e;
+    background-color: #16561faa;
+}
+
+.name span{
+    color: #bbb;
+}
+
+.nameInput{
+    font-size: 24px;
+    font-weight: 700;
+    color: #bbb;
+    flex-grow: 1;
+    border: none;
+    margin: 0 12px;
+    outline: none;
+    background-color: #16561f00;
+}
+
+.messageContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: #0e0404;
+    /* width: 400px; */
+    height: 600px;
+    /* overflow-y: scroll; */
+    overflow-x: hidden;
+}
+
+.messageLeft, .messageRight{
+    list-style: none;
+    padding: 8px 12px;
+    margin: 12px;
+    max-width: 250px;
+    font-size: 15px;
+    word-wrap: break-word;
+}
+
+.messageLeft{
+    border-radius: 20px 20px 20px 0;
+    align-self: flex-start;
+    background-color: #4d4d4d;
+    color: #ddd;
+    box-shadow: -2px 2px 4px #dcdcdc;
+}
+
+.messageRight{
+    border-radius: 20px 20px 0px 20px;
+    align-self: flex-end;
+    background-color: #16561f;
+    color: #ddd;
+    box-shadow: 2px 2px 4px #dcdcdc;
+}
+
+.messageLeft > p > span, .messageRight > p > span{
+    display: block;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.feedBack{
+    color: #ddd;
+    font-style: italic;
+    font-size: 12px;
+    padding: 0 16px 16px 16px;
+    text-align: center;
+}
+
+.messageForm{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+.messageInput{
+    flex-grow: 1;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    padding:  10px;
+    color: #ddd;
+    background-color: #16561faa;
+}
+
+.sendBtn{
+    font-size: 18px;
+    padding: 0 0px 0 20px;
+    border: none;
+    outline: none;
+    color: #16561faa;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.peoplesTotal{
+    margin: 20px 0;
+    color: #474747;
+}
